@@ -1,5 +1,6 @@
 import { Footer } from "../components/Footer";
 import { Sidebar } from "../components/Menu/Sidebar";
+import { Toast } from "../components/Toast";
 
 export function Base({ children }: { children: React.ReactNode }) {
   return (
@@ -9,6 +10,7 @@ export function Base({ children }: { children: React.ReactNode }) {
         {children}
         <Footer />
       </main>
+      <Toast />
     </>
   );
 }
